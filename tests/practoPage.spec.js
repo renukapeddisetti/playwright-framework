@@ -15,5 +15,4 @@ test('test', async ({ page }) => {
     const videoConsult = new VideoConsult(page);
     await videoConsult.gotoVideoConsult();
     await videoConsult.bookConsultation('fever and cough');
-
 });
