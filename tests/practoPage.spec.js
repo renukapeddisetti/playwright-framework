@@ -15,4 +15,7 @@ test('test', async ({ page }) => {
     const videoConsult = new VideoConsult(page);
     await videoConsult.gotoVideoConsult();
     await videoConsult.bookConsultation('fever and cough');
+
+    // Add assertions as needed
+    expect(await page.locator('text=Consultation booked successfully')).toBeVisible();
 });
